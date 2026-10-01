@@ -1,0 +1,52 @@
+% Lab 4 - Task 1
+% Unification Exercises
+
+% Query 1
+% house = house.
+% Result: true.
+% Explanation: Both terms are identical.
+
+% Query 2
+% house = abc.
+% Result: false.
+% Explanation: The atoms are different.
+
+% Query 3
+% edge(a,b) = edge(C,b).
+% Result: C = a.
+% Explanation: C can be unified with a.
+
+% Query 4
+% edge(a,d) = edge(C,B).
+% Result: C = a, B = d.
+% Explanation: Both variables can be instantiated.
+
+% Query 5
+% edge(C,B) = edge(a,d).
+% Result: C = a, B = d.
+% Explanation: Both terms can be unified.
+
+% Query 6
+% edge(A,f(g,h)) = edge(a,B).
+% Result: A = a, B = f(g,h).
+% Explanation: Both arguments can be unified.
+
+% Query 7
+% edge(A,A) = edge(b,c).
+% Result: false.
+% Explanation: A cannot be both b and c.
+
+% Query 8
+% edge(A,A) = edge(b,b).
+% Result: A = b.
+% Explanation: Both arguments have the same value.
+
+% Query 9
+% A = B, B = f.
+% Result: A = f, B = f.
+% Explanation: Both variables become f.
+
+% Query 10
+% A = B, B = f, A = e.
+% Result: false.
+% Explanation: A cannot be both f and e.
